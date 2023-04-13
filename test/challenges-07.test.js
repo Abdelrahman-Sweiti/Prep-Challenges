@@ -244,7 +244,7 @@ describe("Challenge07", () => {
   });
 });
 
-describe("Challenge07", () => {
+describe.skip("Challenge07", () => {
   test.skip("cv_filter", () => {
     let received = {
       python_devs: 0,
@@ -335,7 +335,7 @@ describe("Challenge07", () => {
   });
 });
 
-describe("Challenge07", () => {
+describe.skip("Challenge07", () => {
   test.skip("classes_Avg", () => {
     let received = {
       schoolName: "Al Farouk",
