@@ -39,10 +39,14 @@ const recursionPattern = (int1, int2) => {
 // 
 
 const filterLinks = (str) => {
-    const regex = /href\s*=\s*['"]?(https?:\/\/[^\s'"]+\.(?:com|org|net))['"]?/i;
-    const match = str.match(regex);
-    return match ? match[1] : null;
-  };
+  const regex = /href="http:\/\/([a-z.]+\.(com|org|net))"/;
+  const match = str.match(regex);
+  if (match) {
+    return match[1];
+  } else {
+    return undefined;
+  }
+};
   
 // -------------------------------------------------------------------------------------------------------
 
@@ -61,12 +65,13 @@ const filterLinks = (str) => {
 //
 
 const isPalindrome = (str) => {
-    
-    const cleanStr = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
-    
-    // Compare original string with reversed string
-    return cleanStr === cleanStr.split('').reverse().join('');
-  };
+  str=str.replace(/[^a-z0-9]/gi,'').toLowerCase();
+  let revarsedStr=str.split('').reverse().join('');
+  if(str===revarsedStr)
+  return true;
+  else 
+  return false;
+}
   
 // -------------------------------------------------------------------------------------------------------
 
