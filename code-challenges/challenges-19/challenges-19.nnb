@@ -17,14 +17,14 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [Append And Delete](https://www.hackerrank.com/challenges/append-and-delete/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                ""
+                "function appendAndDelete(s, t, k) {\n    let commonLength = 0;\n  \n    while (commonLength < s.length && commonLength < t.length && s[commonLength] === t[commonLength]) {\n      commonLength++;\n    }\n  \n    const diffLength = s.length - commonLength + t.length - commonLength;\n  \n   \n    if (k >= diffLength && (k >= 2 * commonLength || (k - diffLength) % 2 === 0)) {\n      return 'Yes';\n    }\n  \n    return 'No';\n  }"
             ],
             "outputs": []
         },
@@ -38,7 +38,7 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Compare The Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [Encryption](https://www.hackerrank.com/challenges/encryption/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
@@ -52,7 +52,7 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [The Time In Words](https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
