@@ -15,17 +15,9 @@
 //
 
 const wordLength = (str) => {
-    const words = str.split(" "); 
-    const middleIndex = Math.floor(words.length / 2); 
-  
-   
-    if (words.length % 2 !== 0) {
-      return words[middleIndex].length; 
-    } else {
-
-      return words[middleIndex - 1].length;
-    }
-  };
+  const strArr = str.split(" ");
+  return strArr[Math.floor(strArr.length / 2)].length;
+};
   
 // -------------------------------------------------------------------------------------------------------
 
